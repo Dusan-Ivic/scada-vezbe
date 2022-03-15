@@ -1,0 +1,9 @@
+E:\GitHub\scada-vezbe\SCADA\dCom\Modbus\bin\Debug\Modbus.dll
+E:\GitHub\scada-vezbe\SCADA\dCom\Modbus\bin\Debug\Modbus.pdb
+E:\GitHub\scada-vezbe\SCADA\dCom\Modbus\bin\Debug\Common.dll
+E:\GitHub\scada-vezbe\SCADA\dCom\Modbus\bin\Debug\Common.pdb
+E:\GitHub\scada-vezbe\SCADA\dCom\Modbus\obj\Debug\Modbus.csprojAssemblyReference.cache
+E:\GitHub\scada-vezbe\SCADA\dCom\Modbus\obj\Debug\Modbus.csproj.CoreCompileInputs.cache
+E:\GitHub\scada-vezbe\SCADA\dCom\Modbus\obj\Debug\Modbus.csproj.CopyComplete
+E:\GitHub\scada-vezbe\SCADA\dCom\Modbus\obj\Debug\Modbus.dll
+E:\GitHub\scada-vezbe\SCADA\dCom\Modbus\obj\Debug\Modbus.pdb
