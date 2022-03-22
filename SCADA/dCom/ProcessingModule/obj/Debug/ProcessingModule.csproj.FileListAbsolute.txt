@@ -6,12 +6,3 @@ C:\Users\Racunar1\Desktop\Ognjen\SCADA\dCom\ProcessingModule\bin\Debug\Modbus.dl
 C:\Users\Racunar1\Desktop\Ognjen\SCADA\dCom\ProcessingModule\bin\Debug\Common.pdb
 C:\Users\Racunar1\Desktop\Ognjen\SCADA\dCom\ProcessingModule\obj\Debug\ProcessingModule.dll
 C:\Users\Racunar1\Desktop\Ognjen\SCADA\dCom\ProcessingModule\obj\Debug\ProcessingModule.pdb
-E:\GitHub\scada-vezbe\SCADA\dCom\ProcessingModule\bin\Debug\ProcessingModule.dll
-E:\GitHub\scada-vezbe\SCADA\dCom\ProcessingModule\bin\Debug\ProcessingModule.pdb
-E:\GitHub\scada-vezbe\SCADA\dCom\ProcessingModule\bin\Debug\Common.dll
-E:\GitHub\scada-vezbe\SCADA\dCom\ProcessingModule\bin\Debug\Common.pdb
-E:\GitHub\scada-vezbe\SCADA\dCom\ProcessingModule\obj\Debug\ProcessingModule.csprojAssemblyReference.cache
-E:\GitHub\scada-vezbe\SCADA\dCom\ProcessingModule\obj\Debug\ProcessingModule.csproj.CoreCompileInputs.cache
-E:\GitHub\scada-vezbe\SCADA\dCom\ProcessingModule\obj\Debug\ProcessingModule.csproj.CopyComplete
-E:\GitHub\scada-vezbe\SCADA\dCom\ProcessingModule\obj\Debug\ProcessingModule.dll
-E:\GitHub\scada-vezbe\SCADA\dCom\ProcessingModule\obj\Debug\ProcessingModule.pdb
