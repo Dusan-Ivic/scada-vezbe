@@ -1,9 +1,11 @@
-STA 1
-TCP 502
+STA 7
+TCP 47474
 
-
-HR_INT  6  1200 0  1000 5000  2000  AO  @AnaOut #
-IN_REG  10 1500 0  100   200   100  AI  @AnaIn #
-DO_REG  5  50   0  0       1     0  DO  @DigOut #
-DI_REG  4  80   0  0       1     1  DI  @DigIn #
-IN_REG  1  2000 0  1000 2000  1500  AI  @AnaIn_2 #
+DO_REG  3     0  0     0     1     1  DO  @DigOut    13
+DO_REG  2    50  0     0     1     0  DO  @DigOut_2  11
+DI_REG  2  1000  0     0     1     1  DI  @DigIn      9
+DI_REG  4  1500  0     0     1     0  DI  @DigIn_2    7
+IN_REG  7  2050  0  1050  2250  1150  AI  @AnaIn      2
+IN_REG  3  2150  0   950  1450  1050  AI  @AnaIn_2    1
+HR_INT  2  2500  0  1000  2000  1750  AO  @AnaOut     3
+HR_INT  5  2700  0  1520  2120  1670  AO  @AnaOut_2   6
