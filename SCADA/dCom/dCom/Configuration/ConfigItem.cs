@@ -294,6 +294,22 @@ namespace dCom.Configuration
                 Int32.TryParse(configurationParameters[9], out temp);
                 AcquisitionInterval = temp;
             }
+
+            Double.TryParse(configurationParameters[10], out doubleTemp);
+            ScaleFactor = doubleTemp;
+            Double.TryParse(configurationParameters[11], out doubleTemp);
+            Deviation = doubleTemp;
+            Double.TryParse(configurationParameters[12], out doubleTemp);
+            EGU_Min = doubleTemp;
+            Double.TryParse(configurationParameters[13], out doubleTemp);
+            EGU_Max = doubleTemp;
+
+            UInt16.TryParse(configurationParameters[14], out ushort ushortTemp);
+            AbnormalValue = ushortTemp;
+            Double.TryParse(configurationParameters[15], out doubleTemp);
+            LowLimit = doubleTemp;
+            Double.TryParse(configurationParameters[16], out doubleTemp);
+            HighLimit = doubleTemp;
         }
 
 		private PointType GetRegistryType(string registryTypeName)
