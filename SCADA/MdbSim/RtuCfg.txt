@@ -4,3 +4,5 @@ TCP 502
 HR_INT  1  1000  0  0  2000  1000  AO  @AnaOut    1  1  0  0  2000  #  500  1900
 DO_REG  1  2000  0  0     1     0  DO  @DigOut_1  1  #  #  0     1  1    0     1
 DO_REG  1  2001  0  0     1     0  DO  @DigOut_2  1  #  #  0     1  1    0     1
+DI_REG	1  3000  0  0     1     0  DI  @DigIn_1   1  #  #  0     1  1    0     1
+DI_REG	1  3001  0  0     1     0  DI  @DigIn_2   1  #  #  0     1  1    0     1

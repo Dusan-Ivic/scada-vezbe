@@ -68,8 +68,10 @@ namespace ProcessingModule
                 PointIdentifier analogOut = new PointIdentifier(PointType.ANALOG_OUTPUT, 1000);
                 PointIdentifier digitalOut1 = new PointIdentifier(PointType.DIGITAL_OUTPUT, 2000);
                 PointIdentifier digitalOut2 = new PointIdentifier(PointType.DIGITAL_OUTPUT, 2001);
+                PointIdentifier digitalIn1 = new PointIdentifier(PointType.DIGITAL_INPUT, 3000);
+                PointIdentifier digitalIn2 = new PointIdentifier(PointType.DIGITAL_INPUT, 3001);
 
-                List<PointIdentifier> pointList = new List<PointIdentifier> { analogOut, digitalOut1, digitalOut2 };
+                List<PointIdentifier> pointList = new List<PointIdentifier> { analogOut, digitalOut1, digitalOut2, digitalIn1, digitalIn2 };
                 List<IPoint> points = storage.GetPoints(pointList);
 
                 if (points[1].RawValue == 1)
@@ -90,6 +92,22 @@ namespace ProcessingModule
                 {
                     processingManager.ExecuteWriteCommand(points[1].ConfigItem, configuration.GetTransactionId(), configuration.UnitAddress, points[1].ConfigItem.StartAddress, 0);
                     processingManager.ExecuteWriteCommand(points[2].ConfigItem, configuration.GetTransactionId(), configuration.UnitAddress, points[2].ConfigItem.StartAddress, 0);
+                    points[3].RawValue = 1;
+                    points[4].RawValue = 1;
+                }
+
+                if (points[3].RawValue == 1)
+                {
+                    int value = (int)eguConverter.ConvertToEGU(points[0].ConfigItem.ScaleFactor, points[0].ConfigItem.Deviation, points[0].RawValue);
+                    value += 10;
+                    processingManager.ExecuteWriteCommand(points[0].ConfigItem, configuration.GetTransactionId(), configuration.UnitAddress, points[0].ConfigItem.StartAddress, value);
+                }
+
+                if (points[4].RawValue == 1)
+                {
+                    int value = (int)eguConverter.ConvertToEGU(points[0].ConfigItem.ScaleFactor, points[0].ConfigItem.Deviation, points[0].RawValue);
+                    value += 15;
+                    processingManager.ExecuteWriteCommand(points[0].ConfigItem, configuration.GetTransactionId(), configuration.UnitAddress, points[0].ConfigItem.StartAddress, value);
                 }
 
                 automationTrigger.WaitOne(delayBetweenCommands);
