@@ -1,0 +1,7 @@
+STA 15
+TCP 25252
+
+HR_INT  1  1000  0  0  700  400  AO  @Gate    1  1  0  0  700  #  20  600
+DO_REG  1  2000  0  0    1    0  DO  @Sensor  1  #  #  0    1  1   #    #
+DO_REG  1  3000  0  0    1    0  DO  @Open    1  #  #  0    1  1   #    #
+DO_REG  1  3001  0  0    1    0  DO  @Close   1  #  #  0    1  1   #    #
